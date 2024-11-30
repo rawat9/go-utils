@@ -1,12 +1,12 @@
 package array
 
 /*
-	Reduce function
+	TODO: Reduce function
 
 Usage:
 
 	nums := []{1, 3, 4}
-	A.Filter(nums)
+	A.Reduce(nums)
 */
 func Reduce() {
 	panic("Not implemented")
