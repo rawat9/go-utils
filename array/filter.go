@@ -1,7 +1,7 @@
 package array
 
 /*
-Filter function
+	Filter function
 
 Usage:
 

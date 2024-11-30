@@ -1,7 +1,7 @@
 package array
 
 /*
-Reduce function
+	Reduce function
 
 Usage:
 
