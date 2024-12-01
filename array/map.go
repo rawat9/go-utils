@@ -1,15 +1,22 @@
 package array
 
-/*
-	Applies a function to each element of an array and returns a new array with the results.
+// Map
+//
+// Applies a function `fn` to each element of an array and returns a new array with the results.
+//
+// Example:
+//
+//	nums := []{1, 2, 3}
+//	res := array.Map(nums, func(num int) int {
+//	  return num * 2
+//	})
+//	fmt.Println(res) // [2, 4, 6]
+func Map[T Type](arr []T, fn func(item T, index int) T) []T {
+	result := make([]T, len(arr))
 
-Usage:
-
-	nums := []{1, 3, 4}
-	A.Map(nums, func(num int) int {
-		return num * 2
+	for index := range arr {
+		result[index] = fn(arr[index], index)
 	}
-*/
-func Map() {
-	panic("Not implemented")
+
+	return result
 }
