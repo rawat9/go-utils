@@ -1,4 +1,4 @@
-package array
+package slice
 
 // Map
 //
@@ -11,8 +11,8 @@ package array
 //	  return num * 2
 //	})
 //	fmt.Println(res) // [2, 4, 6]
-func Map[T Type](arr []T, fn func(item T, index int) T) []T {
-	result := make([]T, len(arr))
+func Map[T any, R any](arr []T, fn func(item T, index int) R) []R {
+	result := make([]R, len(arr))
 
 	for index := range arr {
 		result[index] = fn(arr[index], index)

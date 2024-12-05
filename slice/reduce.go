@@ -1,4 +1,4 @@
-package array
+package slice
 
 /*
 	TODO: Reduce function
